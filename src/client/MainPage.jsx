@@ -5,6 +5,7 @@ const MainPage = () => {
   return (
     <div className="container">
       <main>
+        <div className="form-options">hello</div>
         <div className="logo">
           <img src={waspLogo} alt="wasp" />
         </div>
