@@ -1,0 +1,11 @@
+app FormeazeNew {
+  wasp: {
+    version: "^0.11.8"
+  },
+  title: "FormeazeNew"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import Main from "@client/MainPage.jsx"
+}
