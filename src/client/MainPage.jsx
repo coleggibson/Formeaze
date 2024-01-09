@@ -1,20 +1,17 @@
-import waspLogo from './waspLogo.png'
 import './Main.css'
+import './components/FormSidebar'
+import FormSidebar from './components/FormSidebar'
+import FormPage from './components/FormPage'
 
 const MainPage = () => {
   return (
     <div className="container">
       <main>
-        <div className="form-options">hello</div>
-        <div className="logo">
-          <img src={waspLogo} alt="wasp" />
+       
+        <div className='main-content-container flex '>
+        <FormSidebar/>
+        <FormPage/>
         </div>
-
-        <h2 className="welcome-title"> Welcome to Wasp - you just started a new app! </h2>
-        <h3 className="welcome-subtitle">
-          This is page <code>MainPage</code> located at route <code>/</code>.
-          Open <code>src/client/MainPage.jsx</code> to edit it.
-        </h3>
 
         <div className="buttons">
           <a
@@ -25,14 +22,7 @@ const MainPage = () => {
           >
             Take the Tutorial
           </a>
-          <a
-            className="button button-outline"
-            href="https://discord.com/invite/rzdnErX"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Chat on Discord
-          </a>
+        
         </div>
       </main>
     </div>
