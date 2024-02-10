@@ -10,3 +10,13 @@
 
 /* ... */
 
+@layer components {
+
+.form-option {
+  @apply border border-black m-2 
+}
+
+.drag-hover{
+  @apply bg-gray-400
+}
+}
